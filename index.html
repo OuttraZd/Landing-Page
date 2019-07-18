@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Fushia | Fotografia</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
     </head>
     <body>
       
@@ -23,5 +23,24 @@
             </button>
         </header>
        
+       <nav class="nav">
+       		<ul>
+       			<li>Galeria</li>
+       			<li>Wydarzenia</li>
+       			<li>Informacje</li>
+       		</ul>
+       </nav>
+       
+       <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+       
+       <script type="text/javascript">
+       		
+       		$(document).ready(function (){
+       		$('.menu').click(function (){
+       		$('ul').toggleClass('active');
+       		})
+       		})	
+       
+       </script>  
     </body>
 </html>
