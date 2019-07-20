@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
     </head>
     <body>
-      
+      	<section class="main">
         <header class="header">
             <div class="logo">Fushia | Fotografia</div>
             <button class="menu">
@@ -22,7 +22,7 @@
                 </div>
             </button>
         </header>
-       
+        
        <nav class="nav">
        		<ul>
        			<li>Galeria</li>
@@ -30,6 +30,15 @@
        			<li>Informacje</li>
        		</ul>
        </nav>
+       </section>
+       
+       <div class="more">
+      	<span class="fas fa-angle-double-down"></span>
+      </div>
+             
+       <section class="second">
+       		<button class="explore">Więcej</button>
+       </section>
        
        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
        
@@ -41,6 +50,16 @@
        		})
        		})	
        
-       </script>  
+       </script>
+         
+       <script type="text/javascript">
+       
+       $(document).ready(function (){
+       $('.more').click(function (){
+       $('.second').toggleClass('second-active');
+       })
+       })	
+       
+       </script>   
     </body>
 </html>
