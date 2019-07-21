@@ -3,11 +3,12 @@ body {
   padding: 0;
   background-color: #000;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .main {
-	height:100vh;
-	width:100%;	
+  height: 100vh;
+  width: 100%;
 }
 
 .header {
@@ -34,7 +35,7 @@ body {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .logo:hover {
@@ -46,7 +47,6 @@ body {
   width: 70px;
   height: 28px;
   margin-right: 30px;
-  margin-top:20px;
   border: solid 1px #fff;
   background: none;
   cursor: pointer;
@@ -54,6 +54,7 @@ body {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
+  margin-top: 20px;
 }
 
 .menu:hover {
@@ -129,60 +130,93 @@ ul li:hover {
           transform: scale(1.05);
 }
 
-.more {	
-	display:flex;
-	justify-content:center;
-	animation:bounce 2s infinite;
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
 }
 
 @keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
-    transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
   }
   60% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
 .fa-angle-double-down {
-	font-size:34px;
-	color:#fff;
-	margin-top:-80px;
+  font-size: 34px;
+  color: #fff;
+  margin-top: -80px;
+  cursor:pointer;
 }
 
 .second {
-	height:100vh;
-	width:100%;
-	background:#101010;
-	display:none;
+  height: 100vh;
+  width: 100%;
+  background: #303030;
+  display: none;
 }
 
 .second-active {
-	display:flex;
-	justify-content:center;
-	align-items:center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .explore {
-	width:160px;
-	height:40px;
-	background:none;
-	border:1px solid #fff;
-	color:#fff;
-	text-transform: uppercase;
-	outline:none;
-	transition:.5s ease;
-	font-size:11px;
-	border-radius:25px;
+  width: 160px;
+  height: 40px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 11px;
+  border-radius: 25px;
+  cursor:pointer;
 }
 
 .explore:hover {
-	transform:scale(1.1);
-	background:#fff;
-	color:#000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #fff;
+  color: #000;
 }
 
 @media (max-width: 768px) {
