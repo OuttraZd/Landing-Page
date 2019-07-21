@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image:url("/../img/main.png");
-  background-position: center;
+  background-color:#000;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
@@ -10,6 +9,8 @@ body {
 .main {
   height: 100vh;
   width: 100%;
+  background-image:url("../img/main.png");
+  background-position:center;
 }
 
 .header {
@@ -197,11 +198,11 @@ ul li:hover {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: flex-end;
 }
 
 .explore-margin {
-  margin-top:550px;
+ margin-bottom:50px;
 }
 
 .explore {
@@ -233,8 +234,3 @@ ul li:hover {
   .caret-down {
     display: none;
   }
-
-  .explore-margin {
-    margin-top:450px;
-  }
-}
