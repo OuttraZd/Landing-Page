@@ -6,6 +6,29 @@ body {
   overflow-x: hidden;
 }
 
+.explore a {
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.explore a:hover {
+	color:#000;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .main {
   height: 100vh;
   width: 100%;
@@ -32,7 +55,6 @@ body {
   color: #fff;
   margin-left: 30px;
   font-family: 'Darker Grotesque', sans-serif;
-  cursor: pointer;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
@@ -41,8 +63,8 @@ body {
 }
 
 .logo:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .menu {
@@ -126,12 +148,11 @@ ul li {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-  cursor: pointer;
 }
 
 ul li:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .more {
@@ -217,8 +238,8 @@ ul li:hover {
   transition: .5s ease;
   font-size: 11px;
   border-radius: 25px;
-  cursor:pointer;
 }
+
 
 .explore:hover {
   -webkit-transform: scale(1.1);
