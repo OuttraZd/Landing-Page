@@ -255,10 +255,7 @@ ul li:hover {
   .caret-down {
     display: none;
   }
-}
-
-@media (max-width:1360px) {
   .main {
-    background-size: cover;
+  	background-image:url("../img/main2.png");
   }
 }
