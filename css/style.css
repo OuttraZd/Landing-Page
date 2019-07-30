@@ -131,6 +131,7 @@ body {
 ul {
   margin-right: 30px;
   display: none;
+  overflow:hidden;
 }
 
 .active {
@@ -148,6 +149,8 @@ ul li {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
+  animation-name: down;
+  animation-duration:.5s;
 }
 
 ul li:hover {
@@ -193,6 +196,44 @@ ul li:hover {
   60% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
+  }
+}
+
+@keyframes down {
+  0% { 
+    margin-top:-120px;
+  }
+  50% {
+   	transform:scale(1.1);
+  }
+}
+
+@-webkit-keyframes down {
+  0% { 
+    margin-top:-120px;
+  }
+  50% {
+   	transform:scale(1.1);
+  }
+}
+
+@keyframes left {
+  0% {
+  	position:relative;
+    right:-150px;
+  }
+  50% {
+   	right:0px;
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+  	position:relative;
+    right:-150px;
+  }
+  50% {
+   	right:0px;
   }
 }
 
@@ -258,4 +299,15 @@ ul li:hover {
   .main {
   	background-image:url("../img/main2.png");
   }
+  
+  ul li {
+  	animation-name: left;
+  	animation-duration:.6s;
+  }
+}
+
+@media (max-width:600px) {
+	.main {
+		background-image:url("../img/main3.png");
+	}
 }
