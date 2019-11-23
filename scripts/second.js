@@ -1,5 +1,5 @@
-$(document).ready(function (){
-$('.more').click(function (){
-$('.second').toggleClass('second-active');
-})
+$(document).ready(function () {
+    $('.more').click(function () {
+        $('.second').toggleClass('second-active');
+    })
 })
