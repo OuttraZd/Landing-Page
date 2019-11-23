@@ -1,4 +1,4 @@
-## Landing-Photography-Page (Fictional photographer's website)
+## Landing-Page (Fictional photographer's landing website)
 
 ### Technology used
 
